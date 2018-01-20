@@ -1,0 +1,98 @@
+/*--- Base css layout --
+// @import "partials/variables"
+@import "/Users/marcuscarlsson/Documents/code/jonathanrudman/partials/_mixins.sass"
+// @import "partials/animations"
+
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+body
+  padding: 0
+  margin: auto
+  position: relative
+  background-color: #f5f6f7
+  font-family: "Poppins", sans-serif
+  font-weight: 400
+  font-size: 17px
+  color: rgba(0, 0, 0, 0.55)
+  height: 100%
+  max-width: 1920px
+
+//FLEX COMPONENTS
+
+.f-col-md-8
+  flex: 1 0 0
+  padding-right: 15px
+
+.f-col-md-4
+  flex: 2 0 0
+
+.f
+  display: flex
+    // +tablet
+    //   display: block
+    //
+    // +mobile
+    //   display: block
+
+.flex-wrap
+  flex-wrap: wrap
+
+.f-c-c
+  align-items: center
+  justify-content: center
+
+.f-c-b
+  justify-content: center
+
+.f-c-h
+  align-items: center
+
+.f-d-c
+  flex-direction: column
+
+.f-s-b
+  justify-content: space-between
+
+.f-s-a
+  justify-content: space-around
+
+.flex-stretch
+  justify-content: space-between
+
+  // +tablet
+  //   display: block
+  //
+  // +mobile
+  //   display: block
+
+.f-col
+  flex-direction: column
+
+.f-col-6
+  flex-basis: 50%
+
+.f-col-3
+  flex-basis: 33.33333%
+    // +tablet
+    //   flex-basis: 33.33333%
+    //
+    // +mobile
+    //   display: none
+
+.f-col-4
+  flex: 1
+
+  // +desktop-large
+  //   flex-basis: 50%
+  //
+  // +tablet
+  //   flex-basis: 50%
+  //
+  // +mobile
+  //   display: block
+
+.f-col-full
+  flex-basis: 100%
