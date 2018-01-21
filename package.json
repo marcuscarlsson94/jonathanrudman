@@ -1,0 +1,25 @@
+{
+  "name": "jonathanrudman",
+  "version": "1.0.0",
+  "description": "Website for JOnathan Rudman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcuscarlsson94/jonathanrudman.git"
+  },
+  "author": "Marcus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcuscarlsson94/jonathanrudman/issues"
+  },
+  "homepage": "https://github.com/marcuscarlsson94/jonathanrudman#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
