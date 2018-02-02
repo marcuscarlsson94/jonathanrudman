@@ -1,0 +1,41 @@
+.hero
+    height: 80vh
+    background-image: url('../img/jonathanrudman.png')
+
+.header
+    width: 100%
+    padding: 2rem
+    position: relative
+
+    &_logo
+       color: #fff
+        
+    &_menu
+        &_list
+            display: inline-flex
+            font-size: 1.7rem
+
+        &_list--item
+            position: relative
+            list-style: none
+            text-decoration: none
+            color: $primary-menu-link-color
+
+            &:after
+              position: absolute
+              bottom: 1rem
+              left: 0
+              height: 2px
+              background-color: $primary-link-color
+              transform-origin: center
+              transition: ease all .2s
+              transform: scale(0)  
+              
+            &:hover:after
+                transform: scale(1)
+
+        &_list--item:not(:last-of-type)
+            margin-right: 25px
+
+            
+
