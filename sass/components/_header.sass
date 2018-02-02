@@ -1,0 +1,36 @@
+.header
+    width: 100%
+    padding: 2rem 4rem
+    position: relative
+
+    &_logo
+       color: #fff
+        
+    &_menu
+        &_list
+            display: inline-flex
+            font-size: 1.7rem
+
+        &_list--item
+            position: relative
+            list-style: none
+            text-decoration: none
+            color: $primary-menu-link-color
+
+            &::after
+              content: ""
+              position: absolute
+              bottom: -5px
+              left: 0
+              width: 100%
+              height: 3px
+              background-color: $primary-link-color
+              transform-origin: center
+              transition: ease all .2s
+              transform: scale(0)  
+              
+            &:hover:after
+                transform: scale(1)
+
+        &_list--item:not(:last-of-type)
+            margin-right: 5rem
