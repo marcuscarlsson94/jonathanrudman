@@ -12,11 +12,12 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   padding: 0;
   margin: auto;
   position: relative;
   color: rgba(0, 0, 0, 0.65);
+  background-color: #ececec;
   height: 100%;
   max-width: 1920px;
   box-sizing: border-box; }
@@ -30,9 +31,10 @@ body {
   width: 100%;
   padding: 3rem 4rem;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.25); }
+  background-color: white; }
   .header_logo {
-    color: #fff; }
+    color: #000;
+    font-weight: bold; }
   .header_menu_list {
     display: inline-flex;
     font-size: 1.7rem; }
@@ -40,11 +42,13 @@ body {
     position: relative;
     list-style: none;
     text-decoration: none;
-    color: #fff; }
+    color: rgba(0, 0, 0, 0.75); }
+    .header_menu_list--item:hover {
+      color: rgba(0, 0, 0, 0.5); }
     .header_menu_list--item::after {
       content: "";
       position: absolute;
-      bottom: -5px;
+      bottom: -3rem;
       left: 0;
       width: 100%;
       height: 3px;
@@ -73,9 +77,8 @@ body {
 
 .row {
   margin: 0 auto;
-  display: flex; }
-  .row:not(:last-child) {
-    margin-bottom: 4rem; }
+  display: flex;
+  background-color: #fff; }
   .row [class^="col-"]:not(:last-child) {
     margin-right: 0rem; }
   .row .col-1-of-2 {
@@ -97,7 +100,7 @@ body {
   height: 100vh; }
 
 .hero {
-  height: 80vh;
+  height: 95vh;
   background-image: url("../img/jonathanrudman.png");
   background-size: cover;
   background-position: center;
@@ -118,14 +121,24 @@ body {
   font-weight: 300; }
 
 .service {
-  padding: 6rem;
-  border: 1px solid #ececec; }
+  padding: 6rem; }
   .service_heading {
     margin: 1.5rem 0; }
 
 .big_number {
   font-size: 5rem;
+  font-weight: bold;
   color: #af8655; }
+
+.splash {
+  color: #000;
+  background-color: #f5f6f7;
+  text-align: center; }
+  .splash img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%; }
 
 .f {
   display: flex; }
@@ -133,6 +146,9 @@ body {
 .f-c-c {
   align-items: center;
   justify-content: center; }
+
+.f-d {
+  flex-direction: column; }
 
 .f-c-y {
   justify-content: center; }
@@ -146,5 +162,8 @@ body {
 .f-b {
   justify-content: space-between; }
 
-u-full-width {
+.u-full-width {
   width: 100%; }
+
+.u-padding-large {
+  padding: 7rem; }
