@@ -28,8 +28,9 @@ body {
 
 .header {
   width: 100%;
-  padding: 2rem 4rem;
-  position: relative; }
+  padding: 3rem 4rem;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.25); }
   .header_logo {
     color: #fff; }
   .header_menu_list {
@@ -56,29 +57,39 @@ body {
   .header_menu_list--item:not(:last-of-type) {
     margin-right: 5rem; }
 
+.btn_primary {
+  padding: 1.5rem 4rem;
+  background-color: #ececec;
+  border-radius: 5rem;
+  margin: 3rem 0;
+  display: inline-block;
+  color: black;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  transition: .3s ease all; }
+  .btn_primary:hover {
+    transform: translateY(-5px); }
+
 .row {
-  max-width: 114rem;
   margin: 0 auto;
   display: flex; }
   .row:not(:last-child) {
     margin-bottom: 4rem; }
-  .row [class^="col-"] {
-    background-color: red;
-    padding: 2rem; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 4rem; }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 4rem) / 2); }
+    width: calc((100% - 0rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 4rem) / 3); }
+    width: calc((100% - 2 * 0rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 4rem) / 3) + 4rem); }
+    width: calc(2 * ((100% - 2 * 0rem) / 3) + 0rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 4rem) / 4); }
+    width: calc((100% - 3 * 0rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+    width: calc(2 * ((100% - 3 * 0rem) / 4) + 0rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
+    width: calc(3 * ((100% - 3 * 0rem) / 4) + 2 * 0rem); }
 
 .hero {
   position: relative;
@@ -106,6 +117,16 @@ body {
   font-size: 3rem;
   font-weight: 300; }
 
+.service {
+  padding: 6rem;
+  border: 1px solid #ececec; }
+  .service_heading {
+    margin: 1.5rem 0; }
+
+.big_number {
+  font-size: 5rem;
+  color: #af8655; }
+
 .f {
   display: flex; }
 
@@ -124,3 +145,6 @@ body {
 
 .f-b {
   justify-content: space-between; }
+
+u-full-width {
+  width: 100%; }
