@@ -4,6 +4,7 @@
     background-size: cover
     background-position: center
     position: relative
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0 95%);
 
     &_content
         position: absolute
@@ -27,7 +28,6 @@
     &_heading
         margin: 1.5rem 0
 
-
 .big_number
     font-size: 5rem
     font-weight: bold
@@ -39,7 +39,7 @@
     text-align: center
 
     &_text
-    
+        color: $color-primary
     img
         background-size: contain
         background-position: center
