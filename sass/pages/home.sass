@@ -34,9 +34,12 @@
     color: $primary-link-color
 
 .splash
-    background-color: #f5f6f7
     text-align: center
     height: 60rem
+    background-color: $light-grey
+
+    // &:first-of-type
+    //      background-color: #fff
 
     &_text
         color: lighten($color-primary, 30%)
@@ -48,6 +51,19 @@
         background-size: cover
         background-repeat: no-repeat
 
+.info
+    max-width: 99rem
+    margin: auto
+
+    &_logo
+        background-image: url('/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/ibnytt.svg')
+        background-repeat: no-repeat
+        margin: 0 auto 2rem auto
+        width: 16rem
+        height: 5rem
+        opacity: .2
+    h2
+        margin-bottom: 2rem
 
             
 

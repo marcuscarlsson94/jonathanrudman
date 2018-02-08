@@ -1,19 +1,33 @@
 .row
     margin: 0 auto
     display: flex
-    background-color: #fff
 
     // &:not(:last-child)
     //     margin-bottom: $gutter-tb
 
     
     [class^="col-"]
-        // background-color: red
         &:not(:last-child)
             margin-right: $gutter-lr
 
+    .no-gutter-col-1-of-2
+        width: calc((100% - #{$no-gutter}) / 2)
+    
     .col-1-of-2
         width: calc((100% - #{$gutter-lr}) / 2)
+    
+    
+    
+    
+    .no-gutter-col-1-of-3
+        width: calc((100% - 2 * #{$no-gutter}) / 3)
+
+        +tablet
+            width: 100%
+        
+        +mobile
+            width: 100%
+    
     
     .col-1-of-3
         width: calc((100% - 2 * #{$gutter-lr}) / 3)
