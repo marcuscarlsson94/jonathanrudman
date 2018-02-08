@@ -86,6 +86,12 @@ body {
     width: calc((100% - 0rem) / 2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 0rem) / 3); }
+    @media only screen and (max-width: 768px) {
+      .row .col-1-of-3 {
+        width: 100%; } }
+    @media only screen and (max-width: 420px) {
+      .row .col-1-of-3 {
+        width: 100%; } }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 0rem) / 3) + 0rem); }
   .row .col-1-of-4 {
@@ -134,14 +140,17 @@ body {
 
 .splash {
   background-color: #f5f6f7;
-  text-align: center; }
+  text-align: center;
+  height: 60rem; }
   .splash_text {
     color: #4d4d4d; }
-  .splash img {
-    background-size: cover;
+  .splash_img {
+    max-width: 100%;
+    height: 100%;
+    background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/splash_01.jpg");
     background-position: center;
-    background-repeat: no-repeat;
-    max-width: 72rem; }
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .f {
   display: flex; }

@@ -1,1 +1,86 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");*{box-sizing:border-box;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}body{padding:0;margin:auto;position:relative;background-color:#f5f6f7;font-family:"Poppins", sans-serif;font-weight:400;font-size:17px;color:rgba(0,0,0,0.55);height:100%;max-width:1920px}.f-col-md-8{flex:1 0 0;padding-right:15px}.f-col-md-4{flex:2 0 0}.f{display:flex}.flex-wrap{flex-wrap:wrap}.f-c-c{align-items:center;justify-content:center}.f-c-b{justify-content:center}.f-c-h{align-items:center}.f-d-c{flex-direction:column}.f-s-b{justify-content:space-between}.f-s-a{justify-content:space-around}.flex-stretch{justify-content:space-between}.f-col{flex-direction:column}.f-col-6{flex-basis:50%}.f-col-3{flex-basis:33.33333%}.f-col-4{flex:1}.f-col-full{flex-basis:100%}
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility
+}
+
+body {
+    padding: 0;
+    margin: auto;
+    position: relative;
+    background-color: #f5f6f7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.55);
+    height: 100%;
+    max-width: 1920px
+}
+
+.f-col-md-8 {
+    flex: 1 0 0;
+    padding-right: 15px
+}
+
+.f-col-md-4 {
+    flex: 2 0 0
+}
+
+.f {
+    display: flex
+}
+
+.flex-wrap {
+    flex-wrap: wrap
+}
+
+.f-c-c {
+    align-items: center;
+    justify-content: center
+}
+
+.f-c-b {
+    justify-content: center
+}
+
+.f-c-h {
+    align-items: center
+}
+
+.f-d-c {
+    flex-direction: column
+}
+
+.f-s-b {
+    justify-content: space-between
+}
+
+.f-s-a {
+    justify-content: space-around
+}
+
+.flex-stretch {
+    justify-content: space-between
+}
+
+.f-col {
+    flex-direction: column
+}
+
+.f-col-6 {
+    flex-basis: 50%
+}
+
+.f-col-3 {
+    flex-basis: 33.33333%
+}
+
+.f-col-4 {
+    flex: 1
+}
+
+.f-col-full {
+    flex-basis: 100%
+}
