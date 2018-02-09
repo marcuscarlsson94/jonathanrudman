@@ -5,9 +5,9 @@ function myFunction(x) {
 $(function () {
     $(".hamburger").click(function () {
         $(".mobile_menu").toggleClass('mobile_menu--active');
-        if ($(this).hasClass("change"))
-            $('.swap').text('STÄNG');
-        else
-            $('.swap').text('MENY');
+        // if ($(this).hasClass("change"))
+        //     $('.swap').text('STÄNG');
+        // else
+        //     $('.swap').text('MENY');
     });
 });
