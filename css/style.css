@@ -347,6 +347,67 @@ body {
   .info h2 {
     margin-bottom: 2rem; }
 
+.subpage_hero {
+  height: 55vh;
+  background-image: url("../img/splash_01.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .subpage_hero_content {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .subpage_hero_content--text {
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+      -webkit-animation: fadein 2s;
+      /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s;
+      /* Firefox < 16 */
+      -ms-animation: fadein 2s;
+      /* Internet Explorer */
+      -o-animation: fadein 2s;
+      /* Opera < 12.1 */
+      animation: fadein .5s; }
+
+.subpage_hero_font--large {
+  font-size: 3rem;
+  font-weight: 300; }
+
+.service {
+  padding: 6.5rem; }
+  .service_heading {
+    margin: 1.5rem 0; }
+
+.big_number {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #af8655; }
+
+.splash {
+  text-align: center;
+  height: 60rem;
+  background-color: #f5f6f7; }
+  .splash_text {
+    color: #4d4d4d; }
+  .splash_img {
+    max-width: 100%;
+    height: 100%;
+    background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/splash_01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 768px) {
+      .splash_img {
+        order: 1; } }
+    .splash_img_2 {
+      background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/jr.jpg"); }
+    .splash_img_3 {
+      background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/lecture.jpg"); }
+
 .f {
   display: flex; }
 
