@@ -37,7 +37,6 @@
     text-align: center
     height: 60rem
     background-color: $light-grey
-
     // &:first-of-type
     //      background-color: #fff
 
@@ -50,6 +49,15 @@
         background-position: center
         background-size: cover
         background-repeat: no-repeat
+
+        +tablet
+            order: 1
+
+        &_2
+          background-image: url('/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/jr.jpg')  
+        &_3
+          background-image: url('/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/lecture.jpg')  
+
 
 .info
     max-width: 99rem

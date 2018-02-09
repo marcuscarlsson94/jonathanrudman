@@ -224,6 +224,20 @@ body {
     width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 2rem) / 4); }
+    @media only screen and (max-width: 768px) {
+      .row .col-1-of-4 {
+        width: 100%; } }
+    @media only screen and (max-width: 420px) {
+      .row .col-1-of-4 {
+        width: 100%; } }
+  .row .no-gutter-col-1-of-4 {
+    width: calc((100% - 3 * 0rem) / 4); }
+    @media only screen and (max-width: 768px) {
+      .row .no-gutter-col-1-of-4 {
+        width: 100%; } }
+    @media only screen and (max-width: 420px) {
+      .row .no-gutter-col-1-of-4 {
+        width: 100%; } }
   .row .col-2-of-4 {
     width: calc(2 * ((100% - 3 * 2rem) / 4) + 2rem); }
   .row .col-3-of-4 {
@@ -279,6 +293,13 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+    @media only screen and (max-width: 768px) {
+      .splash_img {
+        order: 1; } }
+    .splash_img_2 {
+      background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/jr.jpg"); }
+    .splash_img_3 {
+      background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/lecture.jpg"); }
 
 .info {
   max-width: 99rem;
