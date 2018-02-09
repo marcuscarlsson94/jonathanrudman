@@ -2,13 +2,21 @@
     width: 100%
     padding: 3rem 4rem
     position: relative
-    background-color: white
+    background-color: $dark-grey
+    z-index: 100
 
     &_logo
-       color: #000
+       color: #fff
        font-weight: bold
         
     &_menu
+
+        +tablet
+            display: none
+        
+        +mobile
+            display: none
+
         &_list
             display: inline-flex
             font-size: 1.7rem
@@ -17,11 +25,11 @@
             position: relative
             list-style: none
             text-decoration: none
-            color: $font_color--primary
-            transition: 3s ease all
+            color: #fff
+            transition: .3s ease all
 
             &:hover
-                color: rgba(0,0,0,.5)
+                color: rgba(255,255,255,.5)
 
             &::after
               content: ""
@@ -40,3 +48,101 @@
 
         &_list--item:not(:last-of-type)
             margin-right: 5rem
+
+
+.hamburger 
+    display: inline-flex
+    align-items: center
+    cursor: pointer
+    z-index: 66
+
+    +desktop-medium 
+        display: none
+
+    +desktop-large 
+        display: none
+    p 
+        margin-right: 10px
+        color: white
+
+  
+
+.bar1,
+.bar2,
+.bar3 
+    width: 30px
+    height: 2px
+    background-color: #fff
+    margin: 6px 0
+    transition: 0.4s
+
+.bar1,
+.bar3,
+.change 
+    transition-timing-function: cubic-bezier(.17,1.14,.62,.71)
+    transition-duration: .1s
+  
+
+
+.change .bar1 
+    -webkit-transform: translate(1px, -5px) rotate(45deg)
+    transform: translate(1px, -5px) rotate(45deg)
+    transform-origin: left
+
+
+.change .bar2 
+    opacity: 0
+    transform: translateX(15px)
+
+
+.change .bar3 
+    -webkit-transform: rotate(-45deg) translate(0px, 1px)
+    transform: rotate(-45deg) translate(0px, 1px)
+    transform-origin: left
+
+
+.hide-on-mobile 
+  +mobile 
+    display: none
+  
+  
+.swap
+
+.mobile_menu
+    position: relative
+    display: block
+    width: 100%
+    padding: 2rem
+    background-color: $dark-grey
+    border-top: 1px solid black
+    z-index: 99
+    text-align: center
+    transform: translateY(-50rem)
+    transition: .35s ease all
+
+    +desktop-small
+        display: none
+    
+    +desktop-medium
+        display: none
+    
+    +desktop-large
+        display: none
+
+    &--item
+        list-style: none
+        display: block
+        padding: 3rem 2rem
+        color: white
+        cursor: pointer
+        transition: .3s ease all
+
+        &:hover
+            color: rgba(255,255,255,.7)
+
+.mobile_menu--active
+    transform: translateY(0)
+    
+        
+
+

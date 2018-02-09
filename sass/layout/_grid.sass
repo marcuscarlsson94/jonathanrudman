@@ -2,6 +2,11 @@
     margin: 0 auto
     display: flex
 
+    +tablet
+        display: block
+    +mobile
+        display: block
+
     // &:not(:last-child)
     //     margin-bottom: $gutter-tb
 
@@ -12,9 +17,21 @@
 
     .no-gutter-col-1-of-2
         width: calc((100% - #{$no-gutter}) / 2)
+
+        +tablet
+            width: 100%
+        
+        +mobile
+            width: 100%
     
     .col-1-of-2
         width: calc((100% - #{$gutter-lr}) / 2)
+
+        +tablet
+            width: 100%
+        
+        +mobile
+            width: 100%
     
     
     
