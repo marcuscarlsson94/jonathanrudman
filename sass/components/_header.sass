@@ -41,7 +41,20 @@
               background-color: $primary-link-color
               transform-origin: center
               transition: ease all .2s
-              transform: scale(0)  
+              transform: scale(0)
+
+            &.active  
+                &::after
+                    content: ""
+                    position: absolute
+                    bottom: -3rem
+                    left: 0
+                    width: 100%
+                    height: 3px
+                    background-color: $primary-link-color
+                    transform-origin: center
+                    transition: ease all .2s
+                    transform: scale(1)
               
             &:hover:after
                 transform: scale(1)
