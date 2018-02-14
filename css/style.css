@@ -316,8 +316,18 @@ body {
       animation: fadein .5s; }
 
 .hero_font--large {
+  font-size: 4rem;
+  font-weight: 800; }
+  @media only screen and (max-width: 420px) {
+    .hero_font--large {
+      font-size: 2.5rem; } }
+
+.hero_font--medium {
   font-size: 3rem;
   font-weight: 300; }
+  @media only screen and (max-width: 420px) {
+    .hero_font--medium {
+      font-size: 2rem; } }
 
 .service {
   padding: 6.5rem; }
@@ -351,7 +361,7 @@ body {
       background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/lecture.jpg"); }
 
 .info {
-  max-width: 99rem;
+  max-width: 90rem;
   margin: auto; }
   .info_logo {
     background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/ibnytt.svg");
@@ -405,14 +415,14 @@ body {
 
 .subpage_hero {
   height: 55vh;
-  background-image: url("../img/splash_01.jpg");
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75)), url("../img/splash_02.jpg");
   background-size: cover;
   background-position: center;
   position: relative; }
   .subpage_hero_content {
     position: absolute;
     display: block;
-    top: 50%;
+    top: calc(50% - -3.5rem);
     left: 50%;
     transform: translate(-50%, -50%); }
     .subpage_hero_content--text {
@@ -443,13 +453,12 @@ body {
   font-weight: bold;
   color: #af8655; }
 
-.splash {
+.splash_about {
   text-align: center;
-  height: 60rem;
   background-color: #f5f6f7; }
-  .splash_text {
+  .splash_about--text {
     color: #4d4d4d; }
-  .splash_img {
+  .splash_about_img {
     max-width: 100%;
     height: 100%;
     background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/splash_01.jpg");
@@ -457,11 +466,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat; }
     @media only screen and (max-width: 768px) {
-      .splash_img {
+      .splash_about_img {
         order: 1; } }
-    .splash_img_2 {
+    .splash_about_img_2 {
       background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/jr.jpg"); }
-    .splash_img_3 {
+    .splash_about_img_3 {
       background-image: url("/Users/marcuskarlsson/Code/code-personal/jonathanrudman/img/lecture.jpg"); }
 
 .f {
@@ -508,3 +517,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.u-text-justify {
+  text-align: justify; }

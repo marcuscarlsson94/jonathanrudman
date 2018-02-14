@@ -24,8 +24,18 @@
             animation: fadein .5s;
 
 .hero_font--large
+    font-size: 4rem
+    font-weight: 800
+
+    +mobile
+        font-size: 2.5rem
+
+.hero_font--medium
     font-size: 3rem
     font-weight: 300
+
+    +mobile
+        font-size: 2rem
 
 .service
     padding: 6.5rem
@@ -65,7 +75,7 @@
 
 
 .info
-    max-width: 99rem
+    max-width: 90rem
     margin: auto
 
     &_logo
